@@ -1,0 +1,204 @@
+:root {
+  --color-bg: #69f7be;
+  --color-text-main: #000000;
+  --color-text-header: #2800ff;
+  --color-primary: #ffff00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+
+.wecollect {
+  display: grid;
+  place-items: center;
+  margin: 100px;
+}
+
+
+.table {
+  padding: 20px;
+}
+
+.nav-link:hover {
+  background-color: yellow;
+  text-decoration: underline;
+}
+
+
+h5{
+ text-align: center;
+    padding: 10px;
+
+}
+
+
+ul {
+  border: 1px solid black;
+/*   /* border-radius: 20px; */ */
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 30px;
+}
+
+
+#video {
+  width: 100%;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+.body a:hover {
+  background: var(--color-primary);
+}
+
+body{
+  padding: 20px;
+}
+
+/* Navigation grid */
+.footer {
+  /*   display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top: 4px solid #ffffff;
+   text-align: center !important;
+  margin: 10% auto 1;
+  padding: 2% auto 1% auto;
+  width: 100%;
+  flex-wrap: wrap; */
+  border-top: 1px solid blue;
+  text-align: center;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+.footer a:not(.btn--remix):link,
+a:not(.btn--remix):visited {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #000;
+  text-decoration: none;
+  border-style: none;
+}
+
+.footer a:hover {
+  background: var(--color-primary);
+}
+
+/* Button - Add it from the README instructions */
+button,
+input {
+  margin-top: 20px;
+  font-family: inherit;
+  font-size: 100%;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.25rem 1rem;
+  transition: 500ms;
+}
+
+p10 {
+  font-size: 9px;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: blue;
+  margin: 20px;
+  text-align: center;
+}
+
+
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.container .sold {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+/*    color: black;
+ background: lightgreen;
+  width: 285px;
+  height: 145px;
+  margin: 15px;
+  border: 2px solid black;
+  background-size: cover; */
+}
+
+
+.container {
+  padding: 20px;
+  
+}
+
+
+
+img {
+  z-index:1;
+}
+
+.sold-info {
+    z-index: 2;
+    position: absolute ;
+background:lightgreen;
+    height: auto;
+  width:auto;
+  }
+
+
+
+.floatingleft {
+writing-mode: vertical-lr;
+text-orientation: mixed;
+  position: fixed;
+      z-index: 2;
+    top: 36%;
+    left: 2%;
+}
+
+
+.floatingright{
+writing-mode: vertical-rl;
+text-orientation: mixed;
+  position: fixed;
+      z-index: 2;
+  right: 1%;
+    top: 34%;
+
+}
+
